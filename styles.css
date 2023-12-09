@@ -1,0 +1,8 @@
+.question-item.correct {
+    color: green;
+}
+
+.question-item.incorrect {
+    color: red;
+}
+
