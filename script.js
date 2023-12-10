@@ -5,7 +5,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     Quizz.addEventListener('submit', function(event) {
         
-        event.preventDefault(); // Est sencé empêcher la soumission de se faire toute seule
+        // Est censé empêcher la soumission de se faire toute seule
+        event.preventDefault();
 
         // Vérifie les réponses
         checkAnswers();
@@ -29,14 +30,15 @@ document.addEventListener('DOMContentLoaded', function() {
     function checkAnswer(question, bonNumero) {
 
         const answers = document.getElementsByName(question);
+        
         let selectedAnswer;
 
-        // Trouve la réponse sélectionnée
+        // Trouve si la réponse est sélectionnée
         answers.forEach((answer, index) => {
 
             if (answer.checked) {
 
-                selectedAnswer = index + 1;
+                selectedAnswer = index + 1; // décalage index et numéro réponse
 
             }
         
@@ -83,7 +85,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         selections.forEach(selectionCase => {
 
-            SlelectionCase.checked = false;
+            selectionCase.checked = false;
 
         });
     }
