@@ -1,8 +1,30 @@
+/*Lorsque les réponses sont correctes*/
 .question-item.correct {
     color: green;
 }
 
+/*Lorsque les réponses sont incorrectes*/
 .question-item.incorrect {
     color: red;
 }
 
+/*Message d'alerte*/
+#alert {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #4CAF50;
+    color: #186C3E;
+    border: 2px solid #186C3E;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/*CONGRATULATION*/
+.alert-title {
+    font-size: 1.5em;
+    font-weight: bold;
+}
